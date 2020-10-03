@@ -1,0 +1,136 @@
+@media only screen and (max-width:1200px) {
+    .row {
+        margin:0 15px;
+    }
+    header {
+        height: 75vh;
+    }
+    .hero-text-box {
+        width:90%;
+        top: 40%;
+    }
+    .overly .closebtn {
+        right: 1.5rem;
+        top: -1rem;
+    }
+}
+@media only screen and (max-width:1024px) {
+    header {
+        height: 55vh;
+    }
+    .hero-text-box {
+        top: 30%;
+    }
+    .mobile-menu span {
+        display:block;
+    }
+    .main-nav {
+        display:none;
+    }
+    .overly-content {
+        top: 10%;
+    }
+    html {
+        font-size:57.5%;
+    }
+    .clint-photo {
+        width:100%;
+        float:none;
+        text-align:center;
+    }
+    .clint-reviw{
+        width:100%;
+        float:none;
+        text-align:center;
+    }
+    .contract form {
+    width:100%;
+    margin-left:0;
+}
+    .social-link ul{
+        padding-left:24px;
+    } 
+    
+    .portfolio-image {
+        height:25rem;
+        width: 90%;
+    }
+    
+    .Testmonial .col:nth-child(3), .Testmonial .col:nth-child(4) {
+        margin-top: 1rem;
+    }
+}
+@media only screen and (max-width:980px) {
+     html {
+        font-size:70%;
+    }
+    header {
+        height:60vh;
+    }
+    .overly a {
+        font-size: 2.5rem;
+    }
+    .span_1_of_4 {
+        width:49.2%;
+    }
+    .span_1_of_4:nth-child(3) {
+        margin-left:0;
+    }
+     .portfolio-image {
+        height:17rem;
+         width: 80%;
+    }
+    .overly .closebtn {
+        right: 1rem;
+    }
+    .footer-section ul li a:link {
+        font-size: 2rem ;
+    }
+}
+@media only screen and (max-width:768px) {
+    .litte-drescipton {
+        width:100%;
+        margin-left:0;
+    }
+    .footer-section ul li a:link {
+        font-size: 2.3rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+     html {
+        font-size: 50%;
+    }
+    header {
+        height: 80vh;
+    }
+    .hero-text-box {
+        top: 45%;
+    }
+    .portfolio-filter button {
+        margin: 5px 1rem;
+    }
+    .portfolio-image {
+        height: 22rem;
+        width: 75%;
+    }
+    .Testmonial .col:nth-child(3),
+    .Testmonial .col:nth-child(4) {
+     margin-top:4rem;
+}
+    .span_1_of_4,
+    .span_1_of_2 {
+        width:100%;
+    }
+    .footer-section ul li a:link {
+        font-size: 1.3rem;
+    }
+    
+}
+
+
+
+
+
+
+
+

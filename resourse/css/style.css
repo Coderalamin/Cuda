@@ -1,0 +1,615 @@
+/*=========Start Cuda Poject======*/
+/*===============================
+1.Basic Setup,
+2.Reuseabl Component,
+3.Heding Section,
+4.Navigation,
+5.Service Section,
+6.team section,
+7,Skill sectio,
+8.portfolio sectio,
+8.Testmonial sectio,
+9.Contract sectio,
+10.Footer sectio,
+
+================================*/
+/*==========================*/
+/*=========1.Basic Setup======*/
+/*==========================*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html {
+    font-size:62.5%;
+    scroll-behavior:smooth;
+}
+body {
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height:1.3;
+}
+
+/*=======================*/
+/*=====2.Reuseabl Component,===*/
+/*========================*/
+.row {
+    max-width:114rem;
+    margin:auto;
+}
+Section {
+    padding:8rem 0;
+}
+
+ul li {
+    list-style-type:none;
+}
+.clearfix::after {
+    content:"";
+    display:block;
+    clear:both;
+    height:0;
+    overflow:hidden;
+}
+/*=========Button=========*/
+
+.btn:link,
+.btn:visited,
+.btn {
+    background:#333;
+    border-bottom:.3rem solid #000;
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding:1.5rem 6rem;
+    display:inline-block;
+    border-radius:.3rem;
+    margin-top:4.5rem;
+    font-size:1.6rem;
+    
+}
+.litte-drescipton {
+    font-size:1.8rem;
+    width:60%;
+    margin:auto;
+    line-height:3rem;
+}
+.box {
+    padding:1%;
+}
+.box p{
+    font-size:1.6rem;
+    font-weight:300;
+    margin-top:2rem;
+}
+/*=======================*/
+/*===== Hading===*/
+/*========================*/
+h1{
+    font-size:3.7rem;
+    color:#fff;
+}
+h2 {
+    font-size:4rem;
+    text-transform: uppercase;
+    letter-spacing:.3rem;
+    font-weight:600;
+    margin-top:0;
+    margin-bottom:2rem;
+    text-align:center;
+    color:#fff;
+}
+h2::after {
+    content:"";
+    display:block;
+    height:.4rem;
+    background:#fff;
+    width:8.5rem;
+    margin:auto;
+    margin-top:2rem;
+    color:#fff;
+}
+h3 {
+    font-size:2.4rem;
+    text-transform:uppercase;
+    font-weight:600;
+    color:#fff;
+}
+/*=======================*/
+/*=====3.header Section===*/
+/*========================*/
+header {
+    background:linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)),url(img/hero-section.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    height:85vh;
+}
+
+header .Logo {
+    width:auto;
+    height:3.5rem;
+    margin-top:3.5rem;
+    float:left;
+    position:relative;
+}
+.hero-text-box .btn-hero:hover {
+    color: ##fff;
+    background: #a13301;
+    border-bottom: .3rem solid #844021;
+}
+/*==========================*/
+/*=========4.Navigation======*/
+/*==========================*/
+header .main-nav{
+    float:right;
+    margin-top:4rem;
+}
+header .main-nav li{
+    display:inline-block;
+    margin-left:1rem;
+}
+header .main-nav li:first-child{
+    margin-left:0;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    background:rgba(100, 58, 121, 0);
+    padding:6px 1.6rem;
+    font-size:1.6rem;
+    transition: .3s;
+    border-radius:.7rem;
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+        background:rgba(100, 58, 121, 1);
+
+}
+.main-nav .active{
+    background:rgba(100, 58, 121, 1);
+    display:inline-block;
+     padding:.6rem 1.6rem;
+    border-radius:.7rem;
+}
+nav.uk-sticky-fixed {
+    background:rgba(135, 80, 156, 0.7);
+}
+nav.uk-sticky-fixed .Logo {
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+nav.uk-sticky-fixed .main-nav {
+    margin-top:1.5rem;
+    margin-bottom:.5rem;
+}
+/*====Mobile Menu*/
+.mobile-menu span {
+    color:#fff;
+    font-size:4rem;
+    float:right;
+    margin-top:1rem;
+    display:none;
+}
+.mobile-menu span:hover {
+    cursor:pointer;
+}
+.overly {
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0, 0.8);
+    z-index:1;
+    overflow-x:hidden;
+    transition:.5s;
+    width:0;
+}
+.overly-content {
+    position:relative;
+    top:20%;
+    width:100%;
+    text-align:center;
+}
+.overly a {
+    text-decoration:none;
+    display:block;
+    font-size:3rem;
+    text-transform:uppercase;
+    letter-spacing:.3rem;
+    color:#999;
+    padding:1rem 0;
+}
+.overly a:hover {
+    color:#fff;
+}
+.overly .closebtn {
+    position:absolute;
+    right:4.5rem;
+    top:2rem;
+    font-size:6rem;
+}
+
+.hero-text-box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    width:114rem;
+}
+.btn-hero:link,
+.btn-hero:visited {
+    background: #eb7d4b;
+    border-bottom:.3rem solid #c86a40;
+}
+
+/*==========================*/
+/*=========5.Service Section,======*/
+/*==========================*/
+.Service-Section {
+    background:linear-gradient(rgba(20, 165, 140, 0.9), rgba(20, 165, 140, 0.9)),url(img/Service.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment:scroll;
+    text-align:center;
+    color:#fff;
+}
+.Service-Section h2::after {
+    background:#63c1b1;
+}
+.service-icon {
+    height:12rem;
+    margin-top:4.5rem;
+    margin-bottom:3.5rem;
+}
+.Service-Section .box:hover{
+    background:#efefef;
+    color:#17c2a4;
+    border-radius:2rem;
+    cursor:pointer;
+}
+/*=======================*/
+/*=====6.team section===*/
+/*========================*/
+.team-section {
+    background:linear-gradient(rgba(231, 241, 248, 0.98), rgba(231, 241, 248, 0.98)),url(img/tem.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment:scroll;
+    text-align:center;
+}
+
+.team-section h2 {
+    color:#3c4761;
+}
+.team-section h2::after {
+    background:#c8d9e5;
+}
+.team-section .litte-drescipton {
+  color:#3c4761;  
+}
+.team-member {
+    margin-top:4.5rem;
+    margin-bottom:3.5rem;
+    height:20rem;
+    width:20rem;
+    border-radius:50%;
+}
+.team-section h3 {
+    color:#3c4761;
+}
+.role {
+    color:#55c2e9;
+    font-size:1.6rem;
+    text-transform:capitalize;
+    margin-top:1rem;
+    display:block;
+}
+.team-section .box{
+    color:#3c4761;
+}
+.social-link {
+    margin-top:4.5rem;
+}
+.social-link ul li {
+    display:inline-block;
+    margin:0 .5rem;
+}
+.social-link ul li a {
+    color:#fff;
+}
+.social-link ul li a:link i::before {
+    background:#bdd1df;
+    width:2rem;
+    height:2rem;
+    display:inline-block;
+    font-size:2rem;
+    padding:1rem;
+    border-radius:50%;
+    transition: .5s;
+}
+.social-link ul li a:hover i::before {
+    background:#fff;
+    color:#bdd1df;
+    transform:rotate(360deg);
+}
+/*==========================*/
+/*=========7.skill sectio,======*/
+/*==========================*/
+.skill-section {
+    text-align:center;
+}
+.skill-section h2 {
+    color:#3c4761;
+}
+.skill-section litte-drescipton {
+    color:#3c4761;
+}
+
+.skill-section h2::after {
+    background:#dfe8ed;
+}
+.skill-section h3.html {
+    color:#30bae7;
+}
+.skill-section h3.css {
+    color:#d74680;
+}
+.skill-section h3.bootstrap {
+    color:#15c7a8;
+}
+.skill-section h3.Javascript {
+    color:#eb7d4b;
+}
+.skill-section .box {
+    margin-top:4.5rem;
+}
+svg.radial-progress circle {
+    stroke-width: 5;
+}
+svg.radial-progress text {
+    fill:#3c4761;
+    font-size:1.5rem;
+}
+svg.web-design circle {
+    stroke:#30bae7;
+}
+svg.html circle {
+    stroke:#d74680;
+}
+svg.grapic circle {
+    stroke:#15c7a8;
+}
+svg.ui circle {
+    stroke:#eb7d4b;
+}
+
+
+
+/*==========================*/
+/*=========8.portfolio sectio,======*/
+/*==========================*/
+.portfolio-section {
+   background:linear-gradient(rgba(255, 221, 153, 0.98), rgba(255, 221, 153, 0.98)),url(img/portfolio.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment:scroll;
+    text-align:center;
+}
+.portfolio-section h2 {
+    color:#393939;
+}
+.portfolio-section h2::after {
+    background:#e5c37f;
+}
+.portfolio-section .litte-drescipton {
+    color:#393939;
+}
+
+.portfolio-filter {
+    margin:4.5rem 0;
+}
+.portfolio-filter button {
+    background:#ebc985;
+    font-size:1.8rem;
+    padding:1rem 2rem;
+    border:0;
+    border-radius:.5rem;
+    text-transform:uppercase;
+    color:#393939;
+    margin:0 .5rem;
+    transition:.5s;
+}
+.portfolio-filter button:hover {
+    cursor:pointer;
+    box-shadow:inset 0 .3rem .5rem #393939;
+}
+.portfolio-image {
+    width:100%;
+    height:30rem;
+}
+.portfolio-section .col:nth-child(3) {
+    margin-left:0;
+}
+.portfolio-section h4 {
+    font-size:1.8rem;
+    color:#4e4a42;
+}
+.portfolio-section .btn-lode {
+    background:#17c2a4;
+    border-bottom:.3rem solid #14a58c;
+    transition:.5s;
+}
+.portfolio-section .btn-lode:hover{
+    box-shadow:inset 0 .3rem 2.5rem #08483d;
+}
+/*==========================*/
+/*=========8.Testmonial sectio,======*/
+/*==========================*/
+.Testmonial {
+    background:linear-gradient(rgba(215, 70, 128, 0.8), rgba(215, 70, 128, 0.8)),url(img/tstmunial.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment:scroll;
+
+}
+.Testmonial h2 {
+    color:#ffffff;
+}
+.Testmonial h2::after {
+    background:#ddb2c3;
+}
+.Testmonial .litte-drescipton {
+    text-align:center;
+    color:#fff;
+}
+.Testmonial .col:nth-child(3) {
+    margin-left:0;
+}
+.Testmonial .col:nth-child(1),
+.Testmonial .col:nth-child(2) {
+    margin-top:4rem;
+}
+.Testmonial .col:nth-child(3),
+.Testmonial .col:nth-child(4) {
+    margin-top:8rem;
+}
+.clint-photo img {
+    height:8rem;
+    width:8rem;
+    border-radius:50%;
+    margin-bottom:3rem;
+}
+.clint-photo {
+    width:10rem;
+    float:left;
+}
+.clint-reviw {
+    width:40rem;
+    float:left;
+}
+.clint-reviw p {
+    font-size:2.1rem;
+    font-style:italic;
+    color:#fff;
+    margin-top:0;
+    margin-bottom:2rem;
+}
+.clint-reviw h3 {
+    color:#fff;
+    font-size:2.5rem;
+    margin-top:.1rem;
+    line-height:2rem;
+}
+.clint-reviw .role {
+    color:#ffdd99;
+    font-size:1.8rem;
+    line-height:.5rem;
+    font-style:italic;
+}
+/*==========================*/
+/*=========9.Contract sectio,======*/
+/*==========================*/
+.contract {
+     background:linear-gradient(rgba(60, 84, 153, 0.8), rgba(60, 84, 153, 0.8)),url(img/contract.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center top left;
+    background-attachment:fixed;
+    text-align:center;
+}
+.contract h2 {
+    color:#fff;
+}
+.contract h2::after {
+    background:#273a71;
+}
+.contract .litte-drescipton {
+    color:#fff;
+    font-size:1.8rem;
+}
+.contract form {
+    margin-top:5rem;
+    width:70%;
+    margin-left:15%;
+}
+.contract input[type="text"],
+.contract input[type="email"], 
+.contract textarea {
+    background:rgba(39, 58, 113, 0.9);
+    border:.1rem solid #273a71;
+    width:100%;
+    padding:1.5rem;
+    border-radius:.5rem;
+    font-size:1.8rem;
+    color:#fff;
+    margin:.5rem 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+.contract textarea {
+    height:20rem;
+}
+.contract form ::placeholder {
+    color:#d4d7df;
+    opacity:1;
+}
+.btn-submit {
+    border:0;
+    border-bottom:.3rem solid #299ec5;
+    background:#30bae7;
+    transition:.5s;
+}
+.btn-submit:hover {
+    cursor:pointer;
+    background:#0c5d76;
+    border-bottom:.3rem solid #073b4d;
+}
+/*==========================*/
+/*=========10.Footer sectio,======*/
+/*==========================*/
+.footer-section {
+    background:#344b8e;
+    text-align:center;
+    padding:3rem 0;
+    border-top:.1rem solid rgba(255, 255, 255, 0.3);
+}
+.footer-section ul li {
+    display:inline-block;
+    margin:0 2rem;
+}
+.footer-section ul li a:link,
+.footer-section ul li a:visited{
+    color:#fff;
+    text-decoration:none;
+    text-transform:capitalize;
+    font-size:2.4rem;
+}
+.footer-section ul li:hover a {
+    color:#30b4e2;
+}
+/*************ScrollUp***********/
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: url(../../vendors/img/top.png) no-repeat;
+    width: 38px;
+    height: 38px;
+}
+
+
+
+
+
+
+
+
